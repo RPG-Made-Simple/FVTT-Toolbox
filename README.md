@@ -14,7 +14,7 @@ A FoundryVTT library that provides some common helper utilities, it doesn't have
 
 It **does not** contain any configurations or interface, this library is **only** a API.
 
-_You can safely rely on this module, all the errors and edge cases are handled, your code will **never** be crashed by Toolbox._
+You can safely rely on this module, all the errors and edge cases are (or will be) handled, your code will **never** be crashed by Toolbox by itself (note that errors still could happen, but they will always say why things didn't work correctly)._
 
 ### Note for Developers (modules and macros)
 Take a look at the [Documentation](https://docs.rpgmadesimple.com/FVTT-Toolbox/)
