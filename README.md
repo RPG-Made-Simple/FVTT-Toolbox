@@ -16,10 +16,12 @@ It **does not** contain any configurations or interface, this library is **only*
 
 You can safely rely on this module, all the errors and edge cases are (or will be) handled, your code will **never** be crashed by Toolbox by itself (note that errors still could happen, but they will always say why things didn't work correctly)._
 
-### Note for Developers (modules and macros)
-Take a look at the [Documentation](https://docs.rpgmadesimple.com/FVTT-Toolbox/#/apiReference)
+Do you like the module? Consider supporting it :)
 
 <a href='https://ko-fi.com/T6T8IFCB5' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi5.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+
+### Note for Developers (modules and macros)
+Take a look at the [Documentation](https://docs.rpgmadesimple.com/FVTT-Toolbox/#/apiReference)
 
 ---
 ## Supported Versions

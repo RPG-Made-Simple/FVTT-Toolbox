@@ -12,7 +12,7 @@ It **does not** contain any configurations or interface, this library is **only*
 
 You can safely rely on this module, all the errors and edge cases are (or will be) handled, your code will **never** be crashed by Toolbox by itself (note that errors still could happen, but they will always say why things didn't work correctly)._
 
-**If you are a developer you are looking for [this](https://docs.rpgmadesimple.com/FVTT-Toolbox/)**
+**If you are a developer you are looking for [this](apiReference.md)**
 
 ## Supported Versions
 - **V11**
