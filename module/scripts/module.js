@@ -30,6 +30,7 @@ Hooks.once('init', () => {
 
         // Setup the API and methods
         window['Toolbox'] = {
+            check: Toolbox.check,
             showcaseModule: Toolbox.showcaseModule,
             can: Toolbox.can,
             doesExist: Toolbox.doesExist,
@@ -56,16 +57,16 @@ Hooks.once('init', () => {
         for (const module of Toolbox.data.showcaseModules) {
             console.log(`%c${module}`, `
             font-weight: bold;
-            font-size: 50px;
+            font-size: 36px;
             color: rgb(255,0,136);
             text-shadow:
-                3px 3px 0 rgb(220,19,153),
-                6px 6px 0 rgb(173,44,174),
-                9px 9px 0 rgb(146,58,187),
-                12px 12px 0 rgb(115,75,201),
-                15px 15px 0 rgb(70,99,222),
-                18px 18px 0 rgb(37,117,238),
-                21px 21px 0 rgb(0,136,255)`);
+                2px 2px 0 rgb(220,19,153),
+                4px 4px 0 rgb(173,44,174),
+                6px 6px 0 rgb(146,58,187),
+                8px 8px 0 rgb(115,75,201),
+                10px 10px 0 rgb(70,99,222),
+                12px 12px 0 rgb(37,117,238),
+                14px 14px 0 rgb(0,136,255)`);
         }
     });
 })

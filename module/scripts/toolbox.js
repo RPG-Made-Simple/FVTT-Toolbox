@@ -26,23 +26,75 @@ export class Toolbox {
     }
 
     ////////////////////////////////////////////////////////////////////////////
+    // Checks if the passed value is not empty and is of the correct type
+    ////////////////////////////////////////////////////////////////////////////
+    static check(value, type) {
+        // Debug
+        C.D.info('Toolbox.check()');
+
+        // Check if 'type' is valid
+        if (foundry.utils.isEmpty(type)) {
+            // Debug
+            C.D.error('"type" is missing');
+
+            return;
+        }
+        if (typeof type !== 'string') {
+            // Debug
+            C.D.error('"type" must be a string');
+
+            return;
+        }
+
+        // Check the value
+        if (foundry.utils.isEmpty(value)) {
+            // Debug
+            C.D.info('"value" is empty');
+
+            return false;
+        }
+        // Type handlers
+        if (type === 'array') {
+            if (!Array.isArray(value)) {
+                // Debug
+                C.D.info('"value" is not a "array"');
+
+                return false;
+            }
+        } else {
+            if (typeof value !== type) {
+                // Debug
+                C.D.info(`"value" is not a "${type}"`);
+
+                return false;
+            }
+        }
+
+        // Debug
+        C.D.info(`"value" is not empty and is a "${type}"`);
+
+        return true;
+    }
+
+    ////////////////////////////////////////////////////////////////////////////
     // Will log the passed data in a fancy way
-    // ? This method does not need debug or any fancy information really, its
-    // ? just a eye candy (I was bored lol).
     ////////////////////////////////////////////////////////////////////////////
     static showcaseModule(data) {
-        // Check if the passed data exists
-        if (foundry.utils.isEmpty(data)) {
-            C.D.warn('Invalid data');
+        // Debug
+        C.D.info('Toolbox.showcaseModule()');
+
+        // Check arguments
+        if (!Toolbox.check(data, 'string')) {
+            // Debug
+            C.D.error('"data" is invalid');
+
             return;
         }
-        // Check if the passed data is a string
-        if (typeof data === 'string' || data instanceof String) {
-            Toolbox.data.showcaseModules.push(data);
-        } else {
-            C.D.warn('Data is not a string');
-            return;
-        }
+
+        // Debug
+        C.D.info(`Showcasing module "${data}"`);
+
+        Toolbox.data.showcaseModules.push(data);
     }
 
     ////////////////////////////////////////////////////////////////////////////
@@ -53,15 +105,9 @@ export class Toolbox {
         C.D.info('Toolbox.can()');
 
         // Check if the arguments are valid
-        if (foundry.utils.isEmpty(permissions)) {
+        if (!Toolbox.check(permissions, 'array')) {
             // Debug
-            C.D.error('"permissions" is missing');
-
-            return;
-        }
-        if (!Array.isArray(permissions)) {
-            // Debug
-            C.D.error('"permissions" must be a String Array');
+            C.D.error('"permissions" is invalid');
 
             return;
         }
@@ -138,15 +184,9 @@ export class Toolbox {
         C.D.info('Toolbox.doesExist()');
 
         // Check if the arguments are valid
-        if (foundry.utils.isEmpty(path)) {
+        if (!Toolbox.check(path, 'string')) {
             // Debug
-            C.D.error('"path" is missing');
-
-            return;
-        }
-        if (typeof path !== 'string') {
-            // Debug
-            C.D.error('"path" is not a String');
+            C.D.error('"path" is invalid');
 
             return;
         }
@@ -203,15 +243,9 @@ export class Toolbox {
         C.D.info('Toolbox.saveFile()');
 
         // Check if the arguments are valid
-        if (foundry.utils.isEmpty(path)) {
+        if (!Toolbox.check(path, 'string')) {
             // Debug
-            C.D.error('"path" is missing');
-
-            return;
-        }
-        if (typeof path !== 'string') {
-            // Debug
-            C.D.error('"path" is not a String');
+            C.D.error('"path" is invalid');
 
             return;
         }
@@ -257,15 +291,9 @@ export class Toolbox {
         C.D.info('Toolbox.loadFile()');
 
         // Check if the arguments are valid
-        if (foundry.utils.isEmpty(path)) {
+        if (!Toolbox.check(path, 'string')) {
             // Debug
-            C.D.error('"path" is missing');
-
-            return;
-        }
-        if (typeof path !== 'string') {
-            // Debug
-            C.D.error('"path" is not a String');
+            C.D.error('"path" is invalid');
 
             return;
         }
@@ -296,15 +324,9 @@ export class Toolbox {
         C.D.info('Toolbox.makeSure()');
 
         // Check if the arguments are valid
-        if (foundry.utils.isEmpty(path)) {
+        if (!Toolbox.check(path, 'string')) {
             // Debug
-            C.D.error('"path" is missing');
-
-            return;
-        }
-        if (typeof path !== 'string') {
-            // Debug
-            C.D.error('"path" is not a String');
+            C.D.error('"path" is invalid');
 
             return;
         }

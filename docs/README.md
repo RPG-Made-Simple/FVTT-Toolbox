@@ -4,11 +4,7 @@
     </p>
 </a>
 
-<p align="center">
-    <a href="https://discord.gg/RAgPXB4zG7">
-        <img src="https://discord.com/api/guilds/1071251491375042661/widget.png?style=shield"/>
-    </a>
-</p>
+## What Toolbox Is
 
 A FoundryVTT library that provides some common helper utilities, it doesn't have a general focus, the goal is just to provide module authors with common used methods, well developed, to be reused without worries in any module or macro.
 
@@ -16,12 +12,8 @@ It **does not** contain any configurations or interface, this library is **only*
 
 _You can safely rely on this module, all the errors and edge cases are handled, your code will **never** be crashed by Toolbox._
 
-### Note for Developers (modules and macros)
-Take a look at the [Documentation](https://docs.rpgmadesimple.com/FVTT-Toolbox/)
+**If you are a developer you are looking for [this](https://docs.rpgmadesimple.com/FVTT-Toolbox/)**
 
-<a href='https://ko-fi.com/T6T8IFCB5' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi5.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
-
----
 ## Supported Versions
 - **V11**
 - ~~**V12**~~ _as soon as it gets released_
