@@ -53,20 +53,6 @@ Hooks.once('init', () => {
         // Debug
         C.D.info('Ready!!');
 
-        // Does a fancy log of the modules using Toolbox
-        for (const module of Toolbox.data.showcaseModules) {
-            console.log(`%c${module}`, `
-            font-weight: bold;
-            font-size: 36px;
-            color: rgb(255,0,136);
-            text-shadow:
-                2px 2px 0 rgb(220,19,153),
-                4px 4px 0 rgb(173,44,174),
-                6px 6px 0 rgb(146,58,187),
-                8px 8px 0 rgb(115,75,201),
-                10px 10px 0 rgb(70,99,222),
-                12px 12px 0 rgb(37,117,238),
-                14px 14px 0 rgb(0,136,255)`);
-        }
+        Toolbox.doTheShowcase();
     });
 })
