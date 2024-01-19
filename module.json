@@ -2,7 +2,7 @@
     "id": "toolbox",
     "title": "🛠️ Toolbox (Library)",
     "description": "Library that adds common utilities.",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "library": true,
     "authors": [
         {

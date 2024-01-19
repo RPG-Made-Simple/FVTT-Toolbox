@@ -20,7 +20,7 @@ import { Toolbox } from "./toolbox.js";
 Hooks.once('init', () => {
     Hooks.once('debugger.ready', () => {
         // Debug info
-        C.D = new Debugger(C.ID, C.NAME, true, true);
+        C.D = new Debugger(C.ID, C.NAME, false, false);
         C.D.info('Module Information:');
         C.D.info(`Version ${game.modules.get(C.ID).version}`);
         C.D.info('Library By ZotyDev');

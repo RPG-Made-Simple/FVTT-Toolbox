@@ -1,5 +1,11 @@
 # 🛠️ Toolbox Changelog
 
+## Version 1.0.1
+
+- *Fix* - `saveFile()` now properly returns `true` or `false`.
+- *Internal* - Improved `check()` with better checks.
+- *Internal* - Improved `can()` to use `user.hasPermission()`.
+
 ## Version 1.0.0
 
 - *Internal* - All logging and debugging depends on [Debugger](https://foundryvtt.com/packages/debugger).

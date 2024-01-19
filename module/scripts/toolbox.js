@@ -33,17 +33,17 @@ export class Toolbox {
         C.D.info('Toolbox.check()');
 
         // Check if 'type' is valid
-        if (foundry.utils.isEmpty(type)) {
+        const isTypePresent = !foundry.utils.isEmpty(type);
+        if (!isTypePresent) {
             // Debug
-            C.D.error('"type" is missing');
+            C.D.info('"type" not informed, making empty-only check');
+        } else {
+            if (typeof type !== 'string') {
+                // Debug
+                C.D.error('"type" must be a string');
 
-            return;
-        }
-        if (typeof type !== 'string') {
-            // Debug
-            C.D.error('"type" must be a string');
-
-            return;
+                return;
+            }
         }
 
         // Check the value
@@ -53,25 +53,31 @@ export class Toolbox {
 
             return false;
         }
+
         // Type handlers
-        if (type === 'array') {
-            if (!Array.isArray(value)) {
-                // Debug
-                C.D.info('"value" is not a "array"');
+        if (isTypePresent) {
+            if (type === 'array') {
+                if (!Array.isArray(value)) {
+                    // Debug
+                    C.D.info('"value" is not a "array"');
 
-                return false;
+                    return false;
+                }
+            } else {
+                if (typeof value !== type) {
+                    // Debug
+                    C.D.info(`"value" is not a "${type}"`);
+
+                    return false;
+                }
             }
+
+            // Debug
+            C.D.info(`"value" is not empty and is a "${type}"`);
         } else {
-            if (typeof value !== type) {
-                // Debug
-                C.D.info(`"value" is not a "${type}"`);
-
-                return false;
-            }
+            // Debug
+            C.D.info('"value" is not empty');
         }
-
-        // Debug
-        C.D.info(`"value" is not empty and is a "${type}"`);
 
         return true;
     }
@@ -141,7 +147,6 @@ export class Toolbox {
                 return;
             }
         }
-        let truePermissions = [];
         for (const permission of permissions) {
             const truePermission = game.permissions[permission];
             if (foundry.utils.isEmpty(truePermission)) {
@@ -149,8 +154,6 @@ export class Toolbox {
                 C.D.error(`Passed "${permission}" couldn't be found`);
 
                 return;
-            } else {
-                truePermissions.push(truePermission);
             }
         }
         let user;
@@ -183,8 +186,8 @@ export class Toolbox {
         // Debug
         C.D.info(`Checking if the user "${username}" can do something that requires the following permissions:`, permissions);
 
-        for (const permission of truePermissions) {
-            if (!permission.includes(user.role)) {
+        for (const permission of permissions) {
+            if (!user.hasPermission(permission)) {
                 // Debug
                 C.D.info(`The user "${username}" lacks one or more permissions`);
 
@@ -298,10 +301,12 @@ export class Toolbox {
             // Debug
             C.D.info(`Successfully saved "${path}"`);
 
-            return;
+            return true;
         } catch (error) {
             // Debug
             C.D.error(`Failed to save "${path}":`, error);
+
+            return false;
         }
     }
 
