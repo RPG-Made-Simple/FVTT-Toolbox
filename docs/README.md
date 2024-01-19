@@ -27,6 +27,3 @@ You can safely rely on this module, all the errors and edge cases are (or will b
   - [`can()`]() to see if a user can do something based on permissions
   - [`anyoneWhoCan()`]() to get the first found user that can do something based on permissions
   - [`everyoneWhoCan()`]() to get a `Array` containing all the users that have the passed permissions
-
-
-<h2 align="center"> <a href="https://github.com/ZotyDev/FoundryVTT-Toolbox/blob/main/CHANGELOG.md"> Changelog</a> </h2>
