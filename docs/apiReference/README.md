@@ -17,4 +17,4 @@ Utilities that could be useful in many types of implementations.
 
 ---
 ### Hooks
-[**API**](apiReference/utilities.md)
+[**API**](apiReference/hooks.md)
