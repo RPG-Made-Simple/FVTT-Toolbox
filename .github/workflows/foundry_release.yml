@@ -85,7 +85,7 @@ jobs:
           -H "Authorization: ${{ secrets.FOUNDRY_RELEASE_TOKEN }}" \
           -d '{
             "id": "${{ env.MODULE }}",
-            "dry-run": true,
+            "dry-run": false,
             "release": {
               "version": "${{ env.VERSION }}",
               "manifest": "${{ env.MANIFEST }}",
