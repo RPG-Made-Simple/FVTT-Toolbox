@@ -29,14 +29,18 @@ Take a look at the [Documentation](https://docs.rpgmadesimple.com/FVTT-Toolbox/#
 - ~~**V12**~~ _as soon as it gets released_
 
 ## Main Features
-- Eye candy to [showcase]() your module at the `console`
-- [Check]() the existance of `files` and `folders` at `./data`
-- [Create]() `files` and `folders` at `./data`
-- [Load]() `files` from `./data`
-- [Check]() permissions for users
-  - [`can()`]() to see if a user can do something based on permissions
-  - [`anyoneWhoCan()`]() to get the first found user that can do something based on permissions
-  - [`everyoneWhoCan()`]() to get a `Array` containing all the users that have the passed permissions
+- Eye candy to [showcase](https://docs.rpgmadesimple.com/FVTT-Toolbox/#/apiReference/utilities?id=showcase-module) your module at the `console`
+- [Check](https://docs.rpgmadesimple.com/FVTT-Toolbox/#/apiReference/utilities?id=check) the existance of `files` and `folders` at `./data`
+- [Create](https://docs.rpgmadesimple.com/FVTT-Toolbox/#/apiReference/filesystem?id=make-sure) `files` and `folders` at `./data`
+- [Load](https://docs.rpgmadesimple.com/FVTT-Toolbox/#/apiReference/filesystem?id=load-file) `files` from `./data`
+- [Check](https://docs.rpgmadesimple.com/FVTT-Toolbox/#/apiReference/permissions) permissions for users
+  - [`can()`](https://docs.rpgmadesimple.com/FVTT-Toolbox/#/apiReference/permissions?id=can) to see if a user can do something based on permissions
+  - [`anyoneWhoCan()`](https://docs.rpgmadesimple.com/FVTT-Toolbox/#/apiReference/permissions?id=anyone-who-can) to get the first found user that can do something based on permissions
+  - [`everyoneWhoCan()`](https://docs.rpgmadesimple.com/FVTT-Toolbox/#/apiReference/permissions?id=everyone-who-can) to get a `Array` containing all the users that have the passed permissions
+  - [`canEdit()`](https://docs.rpgmadesimple.com/FVTT-Toolbox/#/apiReference/permissions?id=can-edit) to see if a user can edit something
+  - [`someoneWhoCanEdit()`](https://docs.rpgmadesimple.com/FVTT-Toolbox/#/apiReference/permissions?id=someone-who-can-edit) to get the first found user that can edit something
+- [Math](https://docs.rpgmadesimple.com/FVTT-Toolbox/#/apiReference/math) functions
+- [Token](https://docs.rpgmadesimple.com/FVTT-Toolbox/#/apiReference/token) methods
 
 
 <h2 align="center"> <a href="https://github.com/ZotyDev/FoundryVTT-Toolbox/blob/main/CHANGELOG.md"> Changelog</a> </h2>
