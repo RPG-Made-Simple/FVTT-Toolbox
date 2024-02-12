@@ -1,13 +1,13 @@
 <a href="https://foundryvtt.com/packages/toolbox">
-    <p align="center">
-        <img src="https://raw.githubusercontent.com/RPG-Made-Simple/FVTT-Toolbox/main/branding/title.png" alt="Toolbox Title">
-    </p>
+  <p align="center">
+    <img src="https://raw.githubusercontent.com/RPG-Made-Simple/FVTT-Toolbox/main/branding/title.png" alt="Toolbox Title">
+  </p>
 </a>
 
 <p align="center">
-    <a href="https://discord.gg/RAgPXB4zG7">
-        <img src="https://discord.com/api/guilds/1071251491375042661/widget.png?style=shield"/>
-    </a>
+  <a href="https://discord.gg/RAgPXB4zG7">
+    <img src="https://discord.com/api/guilds/1071251491375042661/widget.png?style=shield"/>
+  </a>
 </p>
 
 A FoundryVTT library that provides some common helper utilities, it doesn't have a general focus, the goal is just to provide module authors with common used methods, well developed, to be reused without worries in any module or macro.

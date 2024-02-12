@@ -3,7 +3,7 @@
 ```js
 // Example
 Hooks.once('toolbox.ready', () => {
-    // ...
+  // ...
 });
 // Will execute something when toolbox is ready
 ```

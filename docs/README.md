@@ -1,7 +1,7 @@
 <a href="https://foundryvtt.com/packages/toolbox">
-    <p align="center">
-        <img src="https://raw.githubusercontent.com/RPG-Made-Simple/FVTT-Toolbox/main/branding/title.png" alt="Toolbox Title">
-    </p>
+  <p align="center">
+    <img src="https://raw.githubusercontent.com/RPG-Made-Simple/FVTT-Toolbox/main/branding/title.png" alt="Toolbox Title">
+  </p>
 </a>
 
 ## What Toolbox Is
@@ -12,7 +12,7 @@ It **does not** contain any configurations or interface, this library is **only*
 
 You can safely rely on this module, all the errors and edge cases are (or will be) handled, your code will **never** be crashed by Toolbox by itself (note that errors still could happen, but they will always say why things didn't work correctly)._
 
-**If you are a developer you are looking for [this](apiReference.md)**
+**If you are a developer you are looking for [this](apiReference/)**
 
 ## Supported Versions
 - **V11**

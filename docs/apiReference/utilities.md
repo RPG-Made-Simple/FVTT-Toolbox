@@ -10,8 +10,8 @@ const validArgument = Toolbox.check("Hey, I'm a string!", 'string');
 ```js
 // Example 2
 const data = {
-    type: 'person',
-    name: 'Bob'
+  type: 'person',
+  name: 'Bob'
 }
 const validArument = Toolbox(data);
 // Will check if 'data' is not empty
@@ -24,7 +24,6 @@ If **no `type` is passed** the function will only check if `value` is **not empt
 
 `type` also supports some other non-default types as well, currently these are:
 - `array` - a `Array` of `any`
-
 
 ## Showcase Module
 

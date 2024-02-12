@@ -25,21 +25,21 @@ async Toolbox.saveFile(path: String, data: Object) -> Promise<void>
 // Example
 // Data must be simple
 const data = {
-    name: '🛠️ Toolbox',
-    id: 'toolbox',
-    type: 'module',
-    requires: [
-        name: '🕷️ Debugger',
-        id: 'debugger',
-        type: 'module'
-    ],
-    randomNumber: 842727,
-    alias: [
-        'toolbox',
-        'Box of Tools',
-        'Toolbox',
-        'Tool Box',
-    ]
+  name: '🛠️ Toolbox',
+  id: 'toolbox',
+  type: 'module',
+  requires: [
+    name: '🕷️ Debugger',
+    id: 'debugger',
+    type: 'module'
+  ],
+  randomNumber: 842727,
+  alias: [
+    'toolbox',
+    'Box of Tools',
+    'Toolbox',
+    'Tool Box',
+  ]
 }
 
 await Toolbox.saveFile('./toolbox.json', data);
@@ -72,21 +72,21 @@ const didFolderExist = await Toolbox.makeSure('./toolbox');
 ```js
 // Example 2
 const defaultData = {
-    name: '🛠️ Toolbox',
-    id: 'toolbox',
-    type: 'module',
-    requires: [
-        name: '🕷️ Debugger',
-        id: 'debugger',
-        type: 'module'
-    ],
-    randomNumber: 842727,
-    alias: [
-        'toolbox',
-        'Box of Tools',
-        'Toolbox',
-        'Tool Box',
-    ]
+  name: '🛠️ Toolbox',
+  id: 'toolbox',
+  type: 'module',
+  requires: [
+    name: '🕷️ Debugger',
+    id: 'debugger',
+    type: 'module'
+  ],
+  randomNumber: 842727,
+  alias: [
+    'toolbox',
+    'Box of Tools',
+    'Toolbox',
+    'Tool Box',
+  ]
 }
 
 const didFileExist = await Toolbox.makeSure('./toolbox.js', defaultData);

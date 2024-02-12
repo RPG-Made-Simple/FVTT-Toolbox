@@ -1,5 +1,14 @@
 # 🛠️ Toolbox Changelog
 
+## Version 1.1.0
+
+- *Internal* - Changed indentation from `4` spaces to `2` spaces
+- *API/Internal* - Changed all instances of `username` to `userId`.
+- *API* - Added [`randomIntMax()`](https://docs.rpgmadesimple.com/FVTT-Toolbox/#/apiReference/math?id=random-int-max)
+- *API* - Added [`getTokenCorners()`](https://docs.rpgmadesimple.com/FVTT-Toolbox/#/apiReference/token?id=get-token-corners)
+- *API* - Added [`canEdit()`](https://docs.rpgmadesimple.com/FVTT-Toolbox/#/apiReference/permissions?id=can-edit)
+- *API* - Added [`someoneWhoCanEdit()`](https://docs.rpgmadesimple.com/FVTT-Toolbox/#/apiReference/permissions?id=someone-who-can-edit)
+
 ## Version 1.0.1
 
 - *Fix* - `saveFile()` now properly returns `true` or `false`.

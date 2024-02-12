@@ -10,8 +10,8 @@
 // ? Here are all the constants used by Toolbox, all static values are and
 // ? should be here.
 export class Constants {
-    static ID = 'toolbox';
-    static NAME_FLAT = 'Toolbox';
-    static NAME = `🛠️ ${Constants.NAME_FLAT}`;
-    static D;
+  static ID = 'toolbox';
+  static NAME_FLAT = 'Toolbox';
+  static NAME = `🛠️ ${Constants.NAME_FLAT}`;
+  static D;
 }
